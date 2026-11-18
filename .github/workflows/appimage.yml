@@ -53,6 +53,7 @@ jobs:
           sudo -u builder bash <<'EOF'
           set -e
           dotnet publish src/PRoCon.UI/PRoCon.UI.csproj -c Release -r "linux-$(uname -m | sed 's/x86_64/x64/; s/aarch64/arm64/')" --self-contained true -o ./src/PRoCon.UI/packaging/AppImage
+          cd src/PRoCon.UI/packaging/AppImage
           chmod +x AppImage.sh
           ./AppImage.sh
           EOF
