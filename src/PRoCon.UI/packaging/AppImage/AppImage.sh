@@ -8,6 +8,7 @@ cd "$(dirname "$0")"
 
 ARCH="$(uname -m)"
 SHARUN="https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/refs/heads/main/useful-tools/quick-sharun.sh"
+DEBLOATED_PKGS="https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/refs/heads/main/useful-tools/get-debloated-pkgs.sh"
 #export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}|latest|*$ARCH.AppImage.zsync"
 export OUTNAME=procon-anylinux-"$ARCH".AppImage
 export DESKTOP=../procon.desktop
@@ -20,7 +21,10 @@ rm -rf AppDir dist
 
 # ADD LIBRARIES
 wget --retry-connrefused --tries=30 "$SHARUN" -O ./quick-sharun
-chmod +x ./quick-sharun
+wget --retry-connrefused --tries=30 "$DEBLOATED_PKGS" -O ./get-debloated-pkgs
+chmod +x ./quick-sharun ./get-debloated-pkgs
+
+./get-debloated-pkgs --add-mesa --add-vulkan
 
 # Point to your binaries
 ./quick-sharun ./*
