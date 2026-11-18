@@ -63,6 +63,6 @@ jobs:
         with:
           name: AppImage
           path: |
-            dist/*.AppImage
-            dist/*.zsync
+            src/PRoCon.UI/packaging/AppImage/dist/*.AppImage
+            src/PRoCon.UI/packaging/AppImage/dist/*.zsync
           archive: false

@@ -30,7 +30,7 @@ jobs:
 
       - name: Build Flatpak
         run: |
-          make regenerate-sources
+          make -C src/PRoCon.UI/packaging/flatpak regenerate-sources
           flatpak-builder --force-clean --disable-rofiles-fuse \
             --repo=flatpak-repo \
             flatpak-build-dir \
