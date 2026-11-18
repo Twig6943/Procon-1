@@ -21,8 +21,9 @@ jobs:
           pacman -Syu --noconfirm archlinux-keyring
           pacman -Syu --noconfirm --needed flatpak flatpak-builder make
 
-      - name: Download SDK
+      - name: Install SDKs
         run: |
+          flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
           flatpak install --user --noninteractive --assumeyes flathub \
           org.freedesktop.Platform//26.08 \
           org.freedesktop.Sdk.Extension.dotnet10
