@@ -1,0 +1,67 @@
+name: Build AppImage
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    container:
+      image: archlinux:latest
+
+    steps:
+      - name: Install base dependencies
+        run: |
+          pacman -Syu --noconfirm archlinux-keyring
+          pacman -Syu --noconfirm \
+            base-devel \
+            git \
+            sudo \
+            wget \
+            zsync \
+            xorg-server-xvfb \
+            dotnet-sdk-10.0 \
+            patchelf
+          pacman -Syu --noconfirm
+
+          # Enable multilib. Recent archlinux:latest containers no longer ship a
+          # commented #[multilib] block, so append the section if absent.
+          if ! grep -q '^\[multilib\]' /etc/pacman.conf; then
+            cat >> /etc/pacman.conf <<'EOF'
+
+          [multilib]
+          Include = /etc/pacman.d/mirrorlist
+          EOF
+          fi
+
+          sudo pacman -Syu --noconfirm
+
+      - name: Create build user
+        run: |
+          useradd -m builder
+          echo "builder ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
+
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Fix permissions
+        run: chown -R builder:builder .
+
+      - name: Build package (makepkg -si)
+        run: |
+          sudo -u builder bash <<'EOF'
+          set -e
+          dotnet publish src/PRoCon.UI/PRoCon.UI.csproj -c Release -r "linux-$(uname -m | sed 's/x86_64/x64/; s/aarch64/arm64/')" --self-contained true -o ./src/PRoCon.UI/packaging/AppImage
+          chmod +x AppImage.sh
+          ./AppImage.sh
+          EOF
+
+      - name: Upload package artifact
+        uses: actions/upload-artifact@v7
+        with:
+          name: AppImage
+          path: |
+            dist/*.AppImage
+            dist/*.zsync
+          archive: false

@@ -1,0 +1,47 @@
+name: Build flatpak
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-flatpak:
+    runs-on: ubuntu-latest
+    container:
+      image: archlinux:latest
+
+    defaults:
+      run:
+        shell: bash
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Install dependencies
+        run: |
+          pacman -Syu --noconfirm archlinux-keyring
+          pacman -Syu --noconfirm --needed flatpak flatpak-builder
+
+      - name: Build Flatpak
+        run: |
+          flatpak-builder --force-clean --disable-rofiles-fuse \
+            --repo=flatpak-repo \
+            flatpak-build-dir \
+            src/PRoCon.UI/packaging/flatpak/io.github.AdKats.PRoCon.yml
+
+      - name: Create Flatpak bundle
+        run: |
+          mkdir -p src/PRoCon.UI/packaging/flatpak/dist
+          flatpak build-bundle flatpak-repo \
+            src/PRoCon.UI/packaging/flatpak/dist/PRoCon.flatpak \
+            io.github.AdKats.PRoCon
+
+      - name: Upload Flatpak artifact
+        uses: actions/upload-artifact@v7
+        with:
+          name: Flatpak
+          path: src/PRoCon.UI/packaging/flatpak/dist/*.flatpak
+          archive: false
