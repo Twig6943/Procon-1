@@ -291,6 +291,7 @@ namespace PRoCon.UI.Views
             }
 
             _client.Game?.SendBanListSavePacket();
+            _client.Game?.SendBanListListPacket(0);
 
             SetStatus($"Banned: {FormatNames()}");
         }

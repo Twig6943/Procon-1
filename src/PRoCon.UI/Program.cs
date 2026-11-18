@@ -1,7 +1,6 @@
 using System;
 using System.Threading;
 using Avalonia;
-using Avalonia.ReactiveUI;
 using PRoCon.Core;
 
 namespace PRoCon.UI
@@ -84,9 +83,15 @@ namespace PRoCon.UI
         }
 
         public static AppBuilder BuildAvaloniaApp()
-            => AppBuilder.Configure<App>()
-                .UsePlatformDetect()
-                .WithInterFont()
-                .UseReactiveUI();
+        {
+            var builder = AppBuilder.Configure<App>().UsePlatformDetect();
+
+            if (OperatingSystem.IsLinux() &&
+                Environment.GetEnvironmentVariable("WAYLAND_DISPLAY") is not null)
+                builder = builder.UseWaylandWithFallback();
+
+            return builder
+                .WithInterFont();
+        }
     }
 }

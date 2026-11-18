@@ -90,9 +90,6 @@ Download the latest release from the [Releases](https://github.com/AdKats/Procon
 Requires [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0).
 
 ```bash
-# Clone and setup
-git clone https://github.com/AdKats/Procon-1.git
-cd Procon-1
 git config core.hooksPath .githooks    # enable code formatting hook
 
 # Build
@@ -104,7 +101,20 @@ dotnet run --project src/PRoCon.UI/PRoCon.UI.csproj
 # Publish single-file executables
 dotnet publish src/PRoCon.UI/PRoCon.UI.csproj -c Release -r win-x64 --self-contained -o publish/win
 dotnet publish src/PRoCon.UI/PRoCon.UI.csproj -c Release -r linux-x64 --self-contained -o publish/linux
-```
+
+# AppImage
+dotnet publish src/PRoCon.UI/PRoCon.UI.csproj -c Release -r "linux-$(uname -m | sed 's/x86_64/x64/; s/aarch64/arm64/')" --self-contained true -o ./src/PRoCon.UI/packaging/AppImage
+chmod +x ./src/PRoCon.UI/packaging/AppImage/*.sh
+./src/PRoCon.UI/packaging/AppImage/AppImage.sh
+
+# flatpak
+cd src/PRoCon.UI/packaging/flatpak
+make regenerate-sources
+flatpak-builder --force-clean --user --install build-dir io.github.AdKats.PRoCon.yml # install to the system
+
+# export as .flatpak file
+flatpak-builder --force-clean --repo=repo build-dir io.github.AdKats.PRoCon.yml
+flatpak build-bundle repo io.github.AdKats.PRoCon.flatpak io.github.AdKats.PRoCon
 
 ### Docker
 

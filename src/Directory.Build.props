@@ -10,5 +10,6 @@
     <LangVersion>latest</LangVersion>
     <Nullable>disable</Nullable>
     <ImplicitUsings>disable</ImplicitUsings>
+    <AllowMissingPrunePackageData>true</AllowMissingPrunePackageData> <!-- arch dotnet-sdk-10.0 pkg requires this to compile. -->
   </PropertyGroup>
 </Project>

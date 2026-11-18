@@ -1,0 +1,62 @@
+/////////////////////////////////////////////
+// GW1 map/mode definitions for PRoCon.
+// Generated from GardenGate/Docs/GW1_LIST.md
+/////////////////////////////////////////////
+
+procon.protected.maps.clear
+
+procon.protected.maps.add "Coop0" "_pvz/Levels/Coastal/Level_COOP_Coastal/Level_COOP_Coastal" "Garden Ops" "Sharkbite Shores" 0
+procon.protected.maps.add "TeamDeathMatch0" "_pvz/Levels/Coastal/Level_COOP_Coastal/Level_COOP_Coastal" "Team Vanquish" "Sharkbite Shores" 0
+procon.protected.maps.add "GnomeBomb0" "_pvz/Levels/Coastal/Level_COOP_Coastal/Level_COOP_Coastal" "Gnome Bomb" "Sharkbite Shores" 0
+procon.protected.maps.add "KillConfirmed0" "_pvz/Levels/Coastal/Level_COOP_Coastal/Level_COOP_Coastal" "Vanquish Confirmed" "Sharkbite Shores" 0
+procon.protected.maps.add "Domination0" "_pvz/Levels/Coastal/Level_COOP_Coastal/Level_COOP_Coastal" "Suburbination" "Sharkbite Shores" 0
+procon.protected.maps.add "SingleFlagCTF0" "_pvz/Levels/Coastal/Level_COOP_Coastal/Level_COOP_Coastal" "Taco Bandits" "Sharkbite Shores" 0
+procon.protected.maps.add "Coop1" "_pvz/Levels/Coastal/Level_COOP_Coastal/Level_COOP_Coastal" "Garden Ops" "Port Scallywag" 0
+procon.protected.maps.add "TeamDeathMatch1" "_pvz/Levels/Coastal/Level_COOP_Coastal/Level_COOP_Coastal" "Team Vanquish" "Port Scallywag" 0
+procon.protected.maps.add "GnomeBomb1" "_pvz/Levels/Coastal/Level_COOP_Coastal/Level_COOP_Coastal" "Gnome Bomb" "Port Scallywag" 0
+procon.protected.maps.add "KillConfirmed1" "_pvz/Levels/Coastal/Level_COOP_Coastal/Level_COOP_Coastal" "Vanquish Confirmed" "Port Scallywag" 0
+procon.protected.maps.add "Domination1" "_pvz/Levels/Coastal/Level_COOP_Coastal/Level_COOP_Coastal" "Suburbination" "Port Scallywag" 0
+procon.protected.maps.add "SingleFlagCTF1" "_pvz/Levels/Coastal/Level_COOP_Coastal/Level_COOP_Coastal" "Taco Bandits" "Port Scallywag" 0
+procon.protected.maps.add "Coop0" "_pvz/Levels/Mainstreet/Level_COOP_Mainstreet/Level_COOP_Mainstreet" "Garden Ops" "Garden Center" 0
+procon.protected.maps.add "TeamDeathMatch0" "_pvz/Levels/Mainstreet/Level_COOP_Mainstreet/Level_COOP_Mainstreet" "Team Vanquish" "Garden Center" 0
+procon.protected.maps.add "GnomeBomb0" "_pvz/Levels/Mainstreet/Level_COOP_Mainstreet/Level_COOP_Mainstreet" "Gnome Bomb" "Garden Center" 0
+procon.protected.maps.add "KillConfirmed0" "_pvz/Levels/Mainstreet/Level_COOP_Mainstreet/Level_COOP_Mainstreet" "Vanquish Confirmed" "Garden Center" 0
+procon.protected.maps.add "Domination0" "_pvz/Levels/Mainstreet/Level_COOP_Mainstreet/Level_COOP_Mainstreet" "Suburbination" "Garden Center" 0
+procon.protected.maps.add "SingleFlagCTF0" "_pvz/Levels/Mainstreet/Level_COOP_Mainstreet/Level_COOP_Mainstreet" "Taco Bandits" "Garden Center" 0
+procon.protected.maps.add "SmallTDM0" "_pvz/Levels/Mainstreet/Level_COOP_Mainstreet/Level_COOP_Mainstreet" "Super Team Vanquish" "Garden Center" 0
+procon.protected.maps.add "ChompVirus0" "_pvz/Levels/Mainstreet/Level_COOP_Mainstreet/Level_COOP_Mainstreet" "Chomp Virus" "Garden Center" 0
+procon.protected.maps.add "Coop1" "_pvz/Levels/Mainstreet/Level_COOP_Mainstreet/Level_COOP_Mainstreet" "Garden Ops" "Chomp Town" 0
+procon.protected.maps.add "TeamDeathMatch1" "_pvz/Levels/Mainstreet/Level_COOP_Mainstreet/Level_COOP_Mainstreet" "Team Vanquish" "Chomp Town" 0
+procon.protected.maps.add "GnomeBomb1" "_pvz/Levels/Mainstreet/Level_COOP_Mainstreet/Level_COOP_Mainstreet" "Gnome Bomb" "Chomp Town" 0
+procon.protected.maps.add "KillConfirmed1" "_pvz/Levels/Mainstreet/Level_COOP_Mainstreet/Level_COOP_Mainstreet" "Vanquish Confirmed" "Chomp Town" 0
+procon.protected.maps.add "Domination1" "_pvz/Levels/Mainstreet/Level_COOP_Mainstreet/Level_COOP_Mainstreet" "Suburbination" "Chomp Town" 0
+procon.protected.maps.add "SingleFlagCTF1" "_pvz/Levels/Mainstreet/Level_COOP_Mainstreet/Level_COOP_Mainstreet" "Taco Bandits" "Chomp Town" 0
+procon.protected.maps.add "SmallTDM1" "_pvz/Levels/Mainstreet/Level_COOP_Mainstreet/Level_COOP_Mainstreet" "Super Team Vanquish" "Chomp Town" 0
+procon.protected.maps.add "ChompVirus1" "_pvz/Levels/Mainstreet/Level_COOP_Mainstreet/Level_COOP_Mainstreet" "Chomp Virus" "Chomp Town" 0
+procon.protected.maps.add "Coop0" "_pvz/Levels/COOP_Suburbia/Level_COOP_Suburbia/Level_COOP_Suburbia" "Garden Ops" "Suburban Flats" 0
+procon.protected.maps.add "TeamDeathMatch0" "_pvz/Levels/COOP_Suburbia/Level_COOP_Suburbia/Level_COOP_Suburbia" "Team Vanquish" "Suburban Flats" 0
+procon.protected.maps.add "GnomeBomb0" "_pvz/Levels/COOP_Suburbia/Level_COOP_Suburbia/Level_COOP_Suburbia" "Gnome Bomb" "Suburban Flats" 0
+procon.protected.maps.add "KillConfirmed0" "_pvz/Levels/COOP_Suburbia/Level_COOP_Suburbia/Level_COOP_Suburbia" "Vanquish Confirmed" "Suburban Flats" 0
+procon.protected.maps.add "Domination0" "_pvz/Levels/COOP_Suburbia/Level_COOP_Suburbia/Level_COOP_Suburbia" "Suburbination" "Suburban Flats" 0
+procon.protected.maps.add "SingleFlagCTF0" "_pvz/Levels/COOP_Suburbia/Level_COOP_Suburbia/Level_COOP_Suburbia" "Taco Bandits" "Suburban Flats" 0
+procon.protected.maps.add "Coop1" "_pvz/Levels/COOP_Suburbia/Level_COOP_Suburbia/Level_COOP_Suburbia" "Garden Ops" "Zomboss Estate" 0
+procon.protected.maps.add "TeamDeathMatch1" "_pvz/Levels/COOP_Suburbia/Level_COOP_Suburbia/Level_COOP_Suburbia" "Team Vanquish" "Zomboss Estate" 0
+procon.protected.maps.add "GnomeBomb1" "_pvz/Levels/COOP_Suburbia/Level_COOP_Suburbia/Level_COOP_Suburbia" "Gnome Bomb" "Zomboss Estate" 0
+procon.protected.maps.add "KillConfirmed1" "_pvz/Levels/COOP_Suburbia/Level_COOP_Suburbia/Level_COOP_Suburbia" "Vanquish Confirmed" "Zomboss Estate" 0
+procon.protected.maps.add "Domination1" "_pvz/Levels/COOP_Suburbia/Level_COOP_Suburbia/Level_COOP_Suburbia" "Suburbination" "Zomboss Estate" 0
+procon.protected.maps.add "SingleFlagCTF1" "_pvz/Levels/COOP_Suburbia/Level_COOP_Suburbia/Level_COOP_Suburbia" "Taco Bandits" "Zomboss Estate" 0
+procon.protected.maps.add "Coop0" "_pvz/Levels/Desert/Level_COOP_Desert/Level_COOP_Desert" "Garden Ops" "Jewel Junction" 0
+procon.protected.maps.add "TeamDeathMatch0" "_pvz/Levels/Desert/Level_COOP_Desert/Level_COOP_Desert" "Team Vanquish" "Jewel Junction" 0
+procon.protected.maps.add "KillConfirmed0" "_pvz/Levels/Desert/Level_COOP_Desert/Level_COOP_Desert" "Vanquish Confirmed" "Jewel Junction" 0
+procon.protected.maps.add "Domination0" "_pvz/Levels/Desert/Level_COOP_Desert/Level_COOP_Desert" "Suburbination" "Jewel Junction" 0
+procon.protected.maps.add "SingleFlagCTF0" "_pvz/Levels/Desert/Level_COOP_Desert/Level_COOP_Desert" "Taco Bandits" "Jewel Junction" 0
+procon.protected.maps.add "Coop0" "_pvz/Levels/Desert/Level_COOP_Palms/Level_COOP_Palms" "Garden Ops" "Crash Course" 0
+procon.protected.maps.add "TeamDeathMatch0" "_pvz/Levels/Desert/Level_COOP_Palms/Level_COOP_Palms" "Team Vanquish" "Crash Course" 0
+procon.protected.maps.add "GnomeBomb0" "_pvz/Levels/Desert/Level_COOP_Palms/Level_COOP_Palms" "Gnome Bomb" "Crash Course" 0
+procon.protected.maps.add "KillConfirmed0" "_pvz/Levels/Desert/Level_COOP_Palms/Level_COOP_Palms" "Vanquish Confirmed" "Crash Course" 0
+procon.protected.maps.add "Domination0" "_pvz/Levels/Desert/Level_COOP_Palms/Level_COOP_Palms" "Suburbination" "Crash Course" 0
+procon.protected.maps.add "SingleFlagCTF0" "_pvz/Levels/Desert/Level_COOP_Palms/Level_COOP_Palms" "Taco Bandits" "Crash Course" 0
+procon.protected.maps.add "RushLarge0" "_pvz/Levels/Coastal/Rush_Coastal_001/Rush_Coastal_001" "Gardens & Graveyards" "Driftwood Shores" 0
+procon.protected.maps.add "RushLarge0" "_pvz/Levels/Desert/Rush_Desert_001/Rush_Desert_001" "Gardens & Graveyards" "Cactus Canyon" 0
+procon.protected.maps.add "RushLarge0" "_pvz/Levels/Sandbox/Level_Suburbia2/Level_Suburbia2" "Gardens & Graveyards" "Main Street" 0
+procon.protected.maps.add "RushLarge0" "_pvz/Levels/Sandbox/Level_SuburbiaC/Level_SuburbiaC" "Gardens & Graveyards" "Wall-nut Hills" 0

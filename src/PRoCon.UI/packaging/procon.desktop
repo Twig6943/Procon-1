@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=PRoCon
+Comment=Free remote control (RCON) tool for gameservers
+Exec=PRoCon.UI
+Icon=procon
+Type=Application
+Categories=Game;Utility;
+StartupWMClass=PRoCon.UI

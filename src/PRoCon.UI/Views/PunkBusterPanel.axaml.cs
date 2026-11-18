@@ -76,6 +76,10 @@ namespace PRoCon.UI.Views
                 _logEntries.RemoveAt(0);
             }
 
+            // Clear stale selection before replacing the source.
+            LogListBox.SelectedItem = null;
+            if (LogListBox.SelectedItems.Count > 0)
+                LogListBox.SelectedItems.Clear();
             LogListBox.ItemsSource = null;
             LogListBox.ItemsSource = new List<string>(_logEntries);
             LogListBox.ScrollIntoView(_logEntries[_logEntries.Count - 1]);

@@ -100,6 +100,11 @@ namespace PRoCon.UI.Views
 
         private void RefreshListDisplay()
         {
+            // Avalonia throws if ItemsSource is replaced while the selection
+            // model still holds indices into the old collection.
+            ReservedSlotsList.SelectedItem = null;
+            if (ReservedSlotsList.SelectedItems.Count > 0)
+                ReservedSlotsList.SelectedItems.Clear();
             ReservedSlotsList.ItemsSource = null;
             ReservedSlotsList.ItemsSource = new List<string>(_reservedPlayers);
         }

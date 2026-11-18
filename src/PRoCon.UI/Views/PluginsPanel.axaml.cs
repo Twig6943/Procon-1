@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Text;
 using Avalonia.Controls;
 using Avalonia.Controls.Primitives;
+using Avalonia.Input.Platform;
 using Avalonia.Interactivity;
 using Avalonia.Threading;
 using PRoCon.Core;

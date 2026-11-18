@@ -1,0 +1,59 @@
+/////////////////////////////////////////////
+// BFN map/mode definitions for PRoCon.
+// Generated from GardenGate/Docs/BFN_LIST.md
+/////////////////////////////////////////////
+
+procon.protected.maps.clear
+
+procon.protected.maps.add "StartPoint_SocialSpace" "Levels/DSub_SocialSpace/DSub_SocialSpace" "Social Space" "Giddy Park" 0
+procon.protected.maps.add "StartPoint_TVM" "Levels/DSub_Region_CheeseMines/DSub_Region_CheeseMines" "Team Vanquish" "Rocky Flats" 0
+procon.protected.maps.add "StartPoint_VanquishConfirmed" "Levels/DSub_Region_CheeseMines/DSub_Region_CheeseMines" "Vanquish Confirmed" "Rocky Flats" 0
+procon.protected.maps.add "StartPoint_Suburbination" "Levels/DSub_Region_CheeseMines/DSub_Region_CheeseMines" "Suburbination" "Rocky Flats" 0
+procon.protected.maps.add "StartPoint_GnomeBomb" "Levels/DSub_Region_CheeseMines/DSub_Region_CheeseMines" "Gnome Bomb" "Rocky Flats" 0
+procon.protected.maps.add "StartPoint_Coop_Ops_GardenA" "Levels/DSub_Region_CheeseMines/DSub_Region_CheeseMines" "Garden Ops" "Rocky Flats" 0
+procon.protected.maps.add "StartPoint_Coop_Ops_GraveyardA" "Levels/DSub_Region_CheeseMines/DSub_Region_CheeseMines" "Graveyard Ops" "Rocky Flats" 0
+procon.protected.maps.add "StartPoint_TVM" "Levels/DSub_TVM_CheeseMines/DSub_TVM_CheeseMines" "Team Vanquish" "Colossal Fossil" 0
+procon.protected.maps.add "StartPoint_VanquishConfirmed" "Levels/DSub_TVM_CheeseMines/DSub_TVM_CheeseMines" "Vanquish Confirmed" "Colossal Fossil" 0
+procon.protected.maps.add "StartPoint_Suburbination" "Levels/DSub_TVM_CheeseMines/DSub_TVM_CheeseMines" "Suburbination" "Colossal Fossil" 0
+procon.protected.maps.add "StartPoint_GnomeBomb" "Levels/DSub_TVM_CheeseMines/DSub_TVM_CheeseMines" "Gnome Bomb" "Colossal Fossil" 0
+procon.protected.maps.add "StartPoint_Coop_Ops_GardenA" "Levels/DSub_TVM_CheeseMines/DSub_TVM_CheeseMines" "Garden Ops" "Colossal Fossil" 0
+procon.protected.maps.add "StartPoint_Coop_Ops_GraveyardA" "Levels/DSub_TVM_CheeseMines/DSub_TVM_CheeseMines" "Graveyard Ops" "Colossal Fossil" 0
+procon.protected.maps.add "StartPoint_TVM" "Levels/DSub_Region_Dreadwood/DSub_Region_Dreadwood" "Team Vanquish" "Z-Tech Factory" 0
+procon.protected.maps.add "StartPoint_VanquishConfirmed" "Levels/DSub_Region_Dreadwood/DSub_Region_Dreadwood" "Vanquish Confirmed" "Z-Tech Factory" 0
+procon.protected.maps.add "StartPoint_Suburbination" "Levels/DSub_Region_Dreadwood/DSub_Region_Dreadwood" "Suburbination" "Z-Tech Factory" 0
+procon.protected.maps.add "StartPoint_GnomeBomb" "Levels/DSub_Region_Dreadwood/DSub_Region_Dreadwood" "Gnome Bomb" "Z-Tech Factory" 0
+procon.protected.maps.add "StartPoint_Coop_Ops_GardenA" "Levels/DSub_Region_Dreadwood/DSub_Region_Dreadwood" "Garden Ops" "Z-Tech Factory" 0
+procon.protected.maps.add "StartPoint_Coop_Ops_GraveyardA" "Levels/DSub_Region_Dreadwood/DSub_Region_Dreadwood" "Graveyard Ops" "Z-Tech Factory" 0
+procon.protected.maps.add "StartPoint_TVM" "Levels/DSub_TVM_Dreadwood/DSub_TVM_Dreadwood" "Team Vanquish" "Ruiny Ruins" 0
+procon.protected.maps.add "StartPoint_VanquishConfirmed" "Levels/DSub_TVM_Dreadwood/DSub_TVM_Dreadwood" "Vanquish Confirmed" "Ruiny Ruins" 0
+procon.protected.maps.add "StartPoint_Suburbination" "Levels/DSub_TVM_Dreadwood/DSub_TVM_Dreadwood" "Suburbination" "Ruiny Ruins" 0
+procon.protected.maps.add "StartPoint_GnomeBomb" "Levels/DSub_TVM_Dreadwood/DSub_TVM_Dreadwood" "Gnome Bomb" "Ruiny Ruins" 0
+procon.protected.maps.add "StartPoint_Coop_Ops_GardenA" "Levels/DSub_TVM_Dreadwood/DSub_TVM_Dreadwood" "Garden Ops" "Ruiny Ruins" 0
+procon.protected.maps.add "StartPoint_Coop_Ops_GraveyardA" "Levels/DSub_TVM_Dreadwood/DSub_TVM_Dreadwood" "Graveyard Ops" "Ruiny Ruins" 0
+procon.protected.maps.add "StartPoint_TVM" "Levels/DSub_Region_TownCenter/DSub_Region_TownCenter" "Team Vanquish" "Pressure Pier" 0
+procon.protected.maps.add "StartPoint_VanquishConfirmed" "Levels/DSub_Region_TownCenter/DSub_Region_TownCenter" "Vanquish Confirmed" "Pressure Pier" 0
+procon.protected.maps.add "StartPoint_Suburbination" "Levels/DSub_Region_TownCenter/DSub_Region_TownCenter" "Suburbination" "Pressure Pier" 0
+procon.protected.maps.add "StartPoint_GnomeBomb" "Levels/DSub_Region_TownCenter/DSub_Region_TownCenter" "Gnome Bomb" "Pressure Pier" 0
+procon.protected.maps.add "StartPoint_Coop_Ops_GardenA" "Levels/DSub_Region_TownCenter/DSub_Region_TownCenter" "Garden Ops" "Pressure Pier" 0
+procon.protected.maps.add "StartPoint_Coop_Ops_GraveyardA" "Levels/DSub_Region_TownCenter/DSub_Region_TownCenter" "Graveyard Ops" "Pressure Pier" 0
+procon.protected.maps.add "StartPoint_TVM" "Levels/DSub_TVM_Suburbs/DSub_TVM_Suburbs" "Team Vanquish" "Daisy Drive" 0
+procon.protected.maps.add "StartPoint_VanquishConfirmed" "Levels/DSub_TVM_Suburbs/DSub_TVM_Suburbs" "Vanquish Confirmed" "Daisy Drive" 0
+procon.protected.maps.add "StartPoint_Suburbination" "Levels/DSub_TVM_Suburbs/DSub_TVM_Suburbs" "Suburbination" "Daisy Drive" 0
+procon.protected.maps.add "StartPoint_GnomeBomb" "Levels/DSub_TVM_Suburbs/DSub_TVM_Suburbs" "Gnome Bomb" "Daisy Drive" 0
+procon.protected.maps.add "StartPoint_Coop_Ops_GardenA" "Levels/DSub_TVM_Suburbs/DSub_TVM_Suburbs" "Garden Ops" "Daisy Drive" 0
+procon.protected.maps.add "StartPoint_Coop_Ops_GraveyardA" "Levels/DSub_TVM_Suburbs/DSub_TVM_Suburbs" "Graveyard Ops" "Daisy Drive" 0
+procon.protected.maps.add "StartPoint_TVM" "Levels/DSub_TVM_ZRefinery/DSub_TVM_ZRefinery" "Team Vanquish" "Z-Tech Oozevoi" 0
+procon.protected.maps.add "StartPoint_VanquishConfirmed" "Levels/DSub_TVM_ZRefinery/DSub_TVM_ZRefinery" "Vanquish Confirmed" "Z-Tech Oozevoi" 0
+procon.protected.maps.add "StartPoint_Suburbination" "Levels/DSub_TVM_ZRefinery/DSub_TVM_ZRefinery" "Suburbination" "Z-Tech Oozevoi" 0
+procon.protected.maps.add "StartPoint_GnomeBomb" "Levels/DSub_TVM_ZRefinery/DSub_TVM_ZRefinery" "Gnome Bomb" "Z-Tech Oozevoi" 0
+procon.protected.maps.add "StartPoint_Coop_Ops_GardenA" "Levels/DSub_TVM_ZRefinery/DSub_TVM_ZRefinery" "Garden Ops" "Z-Tech Oozevoi" 0
+procon.protected.maps.add "StartPoint_Coop_Ops_GraveyardA" "Levels/DSub_TVM_ZRefinery/DSub_TVM_ZRefinery" "Graveyard Ops" "Z-Tech Oozevoi" 0
+procon.protected.maps.add "StartPoint_Rush" "Levels/DSub_Rush_CheeseMines/DSub_Rush_CheeseMines" "Turf Takeover" "Goopy Gully" 0
+procon.protected.maps.add "StartPoint_Rush" "Levels/DSub_Rush_Dreadwood/DSub_Rush_Dreadwood" "Turf Takeover" "Loggy Acres" 0
+procon.protected.maps.add "StartPoint_Rush" "Levels/Dsub_Rush_Farm/DSub_Rush_Farm" "Turf Takeover" "Preserve Pastures" 0
+procon.protected.maps.add "StartPoint_Rush" "Levels/DSub_Rush_Resort/DSub_Rush_Resort" "Turf Takeover" "Tourist Trap Island" 0
+procon.protected.maps.add "StartPoint_Rush" "Levels/DSub_Rush_Shoreline/DSub_Rush_Shoreline" "Turf Takeover" "Turning Point" 0
+procon.protected.maps.add "StartPoint_Rush" "Levels/DSub_Rush_TownCenter/DSub_Rush_TownCenter" "Turf Takeover" "Peachy District" 0
+procon.protected.maps.add "StartPoint_TVM" "Levels/DSub_4v4_SuperArena/DSub_4v4_SuperArena" "Team Vanquish" "Funderdome" 0
+procon.protected.maps.add "StartPoint_TeamElimination" "Levels/DSub_4v4_SuperArena/DSub_4v4_SuperArena" "Battle Arena" "Funderdome" 0
+procon.protected.maps.add "StartPoint_TeamElimination" "Levels/DSub_4v4_SuperArena_V2/DSub_4v4_SuperArena_V2" "Battle Arena" "Funderdome v2" 0

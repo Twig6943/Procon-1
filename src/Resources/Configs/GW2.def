@@ -1,0 +1,115 @@
+/////////////////////////////////////////////
+// GW2 map/mode definitions for PRoCon.
+// Generated from GardenGate/Docs/GW2_LIST.md
+/////////////////////////////////////////////
+
+procon.protected.maps.clear
+
+procon.protected.maps.add "FreeRoam" "Levels/Level_FE_Splash/Level_FE_Splash" "Free Roam" "Splash Screen" 0
+procon.protected.maps.add "FreeRoam" "Levels/Level_FE_Hub/Level_FE_Hub" "Free Roam" "Backyard Battleground" 0
+procon.protected.maps.add "TeamVanquishLarge0" "Levels/Level_Hub_TacoBandits/Level_Hub_TacoBandits" "Team Vanquish" "Backyard Battleground (Community Portal Multiplayer)" 0
+procon.protected.maps.add "VanquishConfirmedLarge0" "Levels/Level_Hub_TacoBandits/Level_Hub_TacoBandits" "Vanquish Confirmed" "Backyard Battleground (Community Portal Multiplayer)" 0
+procon.protected.maps.add "TacoBandits0" "Levels/Level_Hub_TacoBandits/Level_Hub_TacoBandits" "Taco Bandits" "Backyard Battleground (Community Portal Multiplayer)" 0
+procon.protected.maps.add "FreeRoam" "Levels/Level_HUB_GnomeUnderworld/Level_HUB_GnomeUnderworld" "Free Roam" "Trials of Gnomus" 0
+procon.protected.maps.add "Endless0" "Levels/Level_Endless_TimeVoid/Level_Endless_TimeVoid" "Infinity Time" "The Gnomiverse (Infinity Time)" 0
+procon.protected.maps.add "CatsVsDinos0" "Levels/Level_Coop_InfinityPlane/Level_Coop_InfinityPlane" "Cats vs. Dinos" "Gnomiverse XL (Cats vs. Dinos)" 0
+procon.protected.maps.add "GardenOps0" "Levels/Level_Coop_Asia/Level_Coop_Asia" "Garden Ops" "Zen Peak" 0
+procon.protected.maps.add "GraveyardOps0" "Levels/Level_Coop_Asia/Level_Coop_Asia" "Graveyard Ops" "Zen Peak" 0
+procon.protected.maps.add "TeamVanquishLarge0" "Levels/Level_Coop_Asia/Level_Coop_Asia" "Team Vanquish" "Zen Peak" 0
+procon.protected.maps.add "VanquishConfirmedLarge0" "Levels/Level_Coop_Asia/Level_Coop_Asia" "Vanquish Confirmed" "Zen Peak" 0
+procon.protected.maps.add "TeamVanquishGoats0" "Levels/Level_Coop_Asia/Level_Coop_Asia" "Team Vanquish Goats" "Zen Peak" 0
+procon.protected.maps.add "SuburbinationLarge0" "Levels/Level_Coop_Asia/Level_Coop_Asia" "Suburbination" "Zen Peak" 0
+procon.protected.maps.add "GnomeBomb0" "Levels/Level_Coop_Asia/Level_Coop_Asia" "Gnome Bomb" "Zen Peak" 0
+procon.protected.maps.add "TeamElimination0" "Levels/Level_Coop_Asia/Level_Coop_Asia" "Soil Survivors" "Zen Peak" 0
+procon.protected.maps.add "TacoBandits0" "Levels/Level_Coop_Asia/Level_Coop_Asia" "Taco Bandits" "Zen Peak" 0
+procon.protected.maps.add "GardenOps0" "Levels/Level_Coop_Brainstreet/Level_Coop_Brainstreet" "Garden Ops" "Aqua Center" 0
+procon.protected.maps.add "GraveyardOps0" "Levels/Level_Coop_Brainstreet/Level_Coop_Brainstreet" "Graveyard Ops" "Aqua Center" 0
+procon.protected.maps.add "TeamVanquishLarge0" "Levels/Level_Coop_Brainstreet/Level_Coop_Brainstreet" "Team Vanquish" "Aqua Center" 0
+procon.protected.maps.add "VanquishConfirmedLarge0" "Levels/Level_Coop_Brainstreet/Level_Coop_Brainstreet" "Vanquish Confirmed" "Aqua Center" 0
+procon.protected.maps.add "TeamVanquishGoats0" "Levels/Level_Coop_Brainstreet/Level_Coop_Brainstreet" "Team Vanquish Goats" "Aqua Center" 0
+procon.protected.maps.add "SuburbinationLarge0" "Levels/Level_Coop_Brainstreet/Level_Coop_Brainstreet" "Suburbination" "Aqua Center" 0
+procon.protected.maps.add "GnomeBomb0" "Levels/Level_Coop_Brainstreet/Level_Coop_Brainstreet" "Gnome Bomb" "Aqua Center" 0
+procon.protected.maps.add "TeamElimination0" "Levels/Level_Coop_Brainstreet/Level_Coop_Brainstreet" "Soil Survivors" "Aqua Center" 0
+procon.protected.maps.add "CommunityBossHunt0" "Levels/Level_Coop_Brainstreet/Level_Coop_Brainstreet" "Community Boss Hunt" "Aqua Center" 0
+procon.protected.maps.add "FreeRoam" "Levels/Level_Coop_Brainstreet/Level_Coop_Brainstreet" "Free Roam" "Aqua Center" 0
+procon.protected.maps.add "GardenOps0" "Levels/Level_Coop_Dino/Level_Coop_Dino" "Garden Ops" "Boney Island" 0
+procon.protected.maps.add "GraveyardOps0" "Levels/Level_Coop_Dino/Level_Coop_Dino" "Graveyard Ops" "Boney Island" 0
+procon.protected.maps.add "TeamVanquishLarge0" "Levels/Level_Coop_Dino/Level_Coop_Dino" "Team Vanquish" "Boney Island" 0
+procon.protected.maps.add "VanquishConfirmedLarge0" "Levels/Level_Coop_Dino/Level_Coop_Dino" "Vanquish Confirmed" "Boney Island" 0
+procon.protected.maps.add "TeamVanquishGoats0" "Levels/Level_Coop_Dino/Level_Coop_Dino" "Team Vanquish Goats" "Boney Island" 0
+procon.protected.maps.add "SuburbinationLarge0" "Levels/Level_Coop_Dino/Level_Coop_Dino" "Suburbination" "Boney Island" 0
+procon.protected.maps.add "GnomeBomb0" "Levels/Level_Coop_Dino/Level_Coop_Dino" "Gnome Bomb" "Boney Island" 0
+procon.protected.maps.add "TeamElimination0" "Levels/Level_Coop_Dino/Level_Coop_Dino" "Soil Survivors" "Boney Island" 0
+procon.protected.maps.add "GardenOps0" "Levels/Level_Coop_Egypt/Level_Coop_Egypt" "Garden Ops" "Sandy Sands" 0
+procon.protected.maps.add "GraveyardOps0" "Levels/Level_Coop_Egypt/Level_Coop_Egypt" "Graveyard Ops" "Sandy Sands" 0
+procon.protected.maps.add "TeamVanquishLarge0" "Levels/Level_Coop_Egypt/Level_Coop_Egypt" "Team Vanquish" "Sandy Sands" 0
+procon.protected.maps.add "VanquishConfirmedLarge0" "Levels/Level_Coop_Egypt/Level_Coop_Egypt" "Vanquish Confirmed" "Sandy Sands" 0
+procon.protected.maps.add "TeamVanquishGoats0" "Levels/Level_Coop_Egypt/Level_Coop_Egypt" "Team Vanquish Goats" "Sandy Sands" 0
+procon.protected.maps.add "SuburbinationLarge0" "Levels/Level_Coop_Egypt/Level_Coop_Egypt" "Suburbination" "Sandy Sands" 0
+procon.protected.maps.add "GnomeBomb0" "Levels/Level_Coop_Egypt/Level_Coop_Egypt" "Gnome Bomb" "Sandy Sands" 0
+procon.protected.maps.add "TeamElimination0" "Levels/Level_Coop_Egypt/Level_Coop_Egypt" "Soil Survivors" "Sandy Sands" 0
+procon.protected.maps.add "CommunityBossHunt0" "Levels/Level_Coop_Egypt/Level_Coop_Egypt" "Community Boss Hunt" "Sandy Sands" 0
+procon.protected.maps.add "GardenOps0" "Levels/Level_Coop_Rome/Level_Coop_Rome" "Garden Ops" "Colizeum" 0
+procon.protected.maps.add "GraveyardOps0" "Levels/Level_Coop_Rome/Level_Coop_Rome" "Graveyard Ops" "Colizeum" 0
+procon.protected.maps.add "TeamVanquishLarge0" "Levels/Level_Coop_Rome/Level_Coop_Rome" "Team Vanquish" "Colizeum" 0
+procon.protected.maps.add "VanquishConfirmedLarge0" "Levels/Level_Coop_Rome/Level_Coop_Rome" "Vanquish Confirmed" "Colizeum" 0
+procon.protected.maps.add "TeamVanquishGoats0" "Levels/Level_Coop_Rome/Level_Coop_Rome" "Team Vanquish Goats" "Colizeum" 0
+procon.protected.maps.add "SuburbinationLarge0" "Levels/Level_Coop_Rome/Level_Coop_Rome" "Suburbination" "Colizeum" 0
+procon.protected.maps.add "GnomeBomb0" "Levels/Level_Coop_Rome/Level_Coop_Rome" "Gnome Bomb" "Colizeum" 0
+procon.protected.maps.add "TeamElimination0" "Levels/Level_Coop_Rome/Level_Coop_Rome" "Soil Survivors" "Colizeum" 0
+procon.protected.maps.add "TacoBandits0" "Levels/Level_Coop_Rome/Level_Coop_Rome" "Taco Bandits" "Colizeum" 0
+procon.protected.maps.add "FreeRoam" "Levels/Level_Coop_Rome/Level_Coop_Rome" "Free Roam" "Colizeum" 0
+procon.protected.maps.add "GardenOps0" "Levels/Level_Coop_Snow/Level_Coop_Snow" "Garden Ops" "Frosty Creek" 0
+procon.protected.maps.add "GraveyardOps0" "Levels/Level_Coop_Snow/Level_Coop_Snow" "Graveyard Ops" "Frosty Creek" 0
+procon.protected.maps.add "TeamVanquishLarge0" "Levels/Level_Coop_Snow/Level_Coop_Snow" "Team Vanquish" "Frosty Creek" 0
+procon.protected.maps.add "VanquishConfirmedLarge0" "Levels/Level_Coop_Snow/Level_Coop_Snow" "Vanquish Confirmed" "Frosty Creek" 0
+procon.protected.maps.add "TeamVanquishGoats0" "Levels/Level_Coop_Snow/Level_Coop_Snow" "Team Vanquish Goats" "Frosty Creek" 0
+procon.protected.maps.add "SuburbinationLarge0" "Levels/Level_Coop_Snow/Level_Coop_Snow" "Suburbination" "Frosty Creek" 0
+procon.protected.maps.add "GnomeBomb0" "Levels/Level_Coop_Snow/Level_Coop_Snow" "Gnome Bomb" "Frosty Creek" 0
+procon.protected.maps.add "TeamElimination0" "Levels/Level_Coop_Snow/Level_Coop_Snow" "Soil Survivors" "Frosty Creek" 0
+procon.protected.maps.add "BossHunt0" "Levels/Level_Coop_Snow/Level_Coop_Snow" "Boss Hunt" "Frosty Creek" 0
+procon.protected.maps.add "CommunityBossHunt0" "Levels/Level_Coop_Snow/Level_Coop_Snow" "Community Boss Hunt" "Frosty Creek" 0
+procon.protected.maps.add "GardenOps0" "Levels/Level_Coop_Space/Level_Coop_Space" "Garden Ops" "Lunar Landing" 0
+procon.protected.maps.add "GraveyardOps0" "Levels/Level_Coop_Space/Level_Coop_Space" "Graveyard Ops" "Lunar Landing" 0
+procon.protected.maps.add "TeamVanquishLarge0" "Levels/Level_Coop_Space/Level_Coop_Space" "Team Vanquish" "Lunar Landing" 0
+procon.protected.maps.add "VanquishConfirmedLarge0" "Levels/Level_Coop_Space/Level_Coop_Space" "Vanquish Confirmed" "Lunar Landing" 0
+procon.protected.maps.add "TeamVanquishGoats0" "Levels/Level_Coop_Space/Level_Coop_Space" "Team Vanquish Goats" "Lunar Landing" 0
+procon.protected.maps.add "SuburbinationLarge0" "Levels/Level_Coop_Space/Level_Coop_Space" "Suburbination" "Lunar Landing" 0
+procon.protected.maps.add "GnomeBomb0" "Levels/Level_Coop_Space/Level_Coop_Space" "Gnome Bomb" "Lunar Landing" 0
+procon.protected.maps.add "TeamElimination0" "Levels/Level_Coop_Space/Level_Coop_Space" "Soil Survivors" "Lunar Landing" 0
+procon.protected.maps.add "TacoBandits0" "Levels/Level_Coop_Space/Level_Coop_Space" "Taco Bandits" "Lunar Landing" 0
+procon.protected.maps.add "GardenOps0" "Levels/Level_Coop_TimePark/Level_Coop_TimePark" "Garden Ops" "Time Park" 0
+procon.protected.maps.add "GraveyardOps0" "Levels/Level_Coop_TimePark/Level_Coop_TimePark" "Graveyard Ops" "Time Park" 0
+procon.protected.maps.add "TeamVanquishLarge0" "Levels/Level_Coop_TimePark/Level_Coop_TimePark" "Team Vanquish" "Time Park" 0
+procon.protected.maps.add "VanquishConfirmedLarge0" "Levels/Level_Coop_TimePark/Level_Coop_TimePark" "Vanquish Confirmed" "Time Park" 0
+procon.protected.maps.add "TeamVanquishGoats0" "Levels/Level_Coop_TimePark/Level_Coop_TimePark" "Team Vanquish Goats" "Time Park" 0
+procon.protected.maps.add "SuburbinationLarge0" "Levels/Level_Coop_TimePark/Level_Coop_TimePark" "Suburbination" "Time Park" 0
+procon.protected.maps.add "GnomeBomb0" "Levels/Level_Coop_TimePark/Level_Coop_TimePark" "Gnome Bomb" "Time Park" 0
+procon.protected.maps.add "TeamElimination0" "Levels/Level_Coop_TimePark/Level_Coop_TimePark" "Soil Survivors" "Time Park" 0
+procon.protected.maps.add "BossHunt0" "Levels/Level_Coop_TimePark/Level_Coop_TimePark" "Boss Hunt" "Time Park" 0
+procon.protected.maps.add "CommunityBossHunt0" "Levels/Level_Coop_TimePark/Level_Coop_TimePark" "Community Boss Hunt" "Time Park" 0
+procon.protected.maps.add "GardenOps0" "Levels/Level_Coop_ZombossFactory/Level_Coop_ZombossFactory" "Garden Ops" "Z-Tech Factory" 0
+procon.protected.maps.add "GraveyardOps0" "Levels/Level_Coop_ZombossFactory/Level_Coop_ZombossFactory" "Graveyard Ops" "Z-Tech Factory" 0
+procon.protected.maps.add "TeamVanquishLarge0" "Levels/Level_Coop_ZombossFactory/Level_Coop_ZombossFactory" "Team Vanquish" "Z-Tech Factory" 0
+procon.protected.maps.add "VanquishConfirmedLarge0" "Levels/Level_Coop_ZombossFactory/Level_Coop_ZombossFactory" "Vanquish Confirmed" "Z-Tech Factory" 0
+procon.protected.maps.add "TeamVanquishGoats0" "Levels/Level_Coop_ZombossFactory/Level_Coop_ZombossFactory" "Team Vanquish Goats" "Z-Tech Factory" 0
+procon.protected.maps.add "SuburbinationLarge0" "Levels/Level_Coop_ZombossFactory/Level_Coop_ZombossFactory" "Suburbination" "Z-Tech Factory" 0
+procon.protected.maps.add "GnomeBomb0" "Levels/Level_Coop_ZombossFactory/Level_Coop_ZombossFactory" "Gnome Bomb" "Z-Tech Factory" 0
+procon.protected.maps.add "TeamElimination0" "Levels/Level_Coop_ZombossFactory/Level_Coop_ZombossFactory" "Soil Survivors" "Z-Tech Factory" 0
+procon.protected.maps.add "GardenOps0" "Levels/Level_Coop_Zomburbia/Level_Coop_Zomburbia" "Garden Ops" "Frontline Flats" 0
+procon.protected.maps.add "GraveyardOps0" "Levels/Level_Coop_Zomburbia/Level_Coop_Zomburbia" "Graveyard Ops" "Frontline Flats" 0
+procon.protected.maps.add "TeamVanquishLarge0" "Levels/Level_Coop_Zomburbia/Level_Coop_Zomburbia" "Team Vanquish" "Frontline Flats" 0
+procon.protected.maps.add "VanquishConfirmedLarge0" "Levels/Level_Coop_Zomburbia/Level_Coop_Zomburbia" "Vanquish Confirmed" "Frontline Flats" 0
+procon.protected.maps.add "TeamVanquishGoats0" "Levels/Level_Coop_Zomburbia/Level_Coop_Zomburbia" "Team Vanquish Goats" "Frontline Flats" 0
+procon.protected.maps.add "SuburbinationLarge0" "Levels/Level_Coop_Zomburbia/Level_Coop_Zomburbia" "Suburbination" "Frontline Flats" 0
+procon.protected.maps.add "GnomeBomb0" "Levels/Level_Coop_Zomburbia/Level_Coop_Zomburbia" "Gnome Bomb" "Frontline Flats" 0
+procon.protected.maps.add "TeamElimination0" "Levels/Level_Coop_Zomburbia/Level_Coop_Zomburbia" "Soil Survivors" "Frontline Flats" 0
+procon.protected.maps.add "TacoBandits0" "Levels/Level_Coop_Zomburbia/Level_Coop_Zomburbia" "Taco Bandits" "Frontline Flats" 0
+procon.protected.maps.add "GnGLarge0" "Levels/Level_Rush_Snow/Level_Rush_Snow" "Gardens & Graveyards" "Great White North" 0
+procon.protected.maps.add "GnGLarge0" "Levels/Level_Rush_Suburbia/Level_Rush_Suburbia" "Gardens & Graveyards" "Wall-nut Hills" 0
+procon.protected.maps.add "GnGLarge0" "Levels/Level_Rush_Themepark/Level_Rush_Themepark" "Gardens & Graveyards" "Seeds of Time" 0
+procon.protected.maps.add "HerbalAssaultLarge0" "Levels/Level_Herb_Brainstreet/Level_Herb_Brainstreet" "Herbal Assault" "Zombopolis" 0
+procon.protected.maps.add "HerbalAssaultLarge0" "Levels/Level_Herb_Space/Level_Herb_Space" "Herbal Assault" "Moon Base Z" 0
+procon.protected.maps.add "StreamingInstall" "Levels/Level_Herb_Space/Level_Herb_Space" "Streaming Install" "Moon Base Z" 0
+procon.protected.maps.add "HerbalAssaultLarge0" "Levels/Level_Herb_Zomburbia/Level_Herb_Zomburbia" "Herbal Assault" "Zomburbia" 0
+procon.protected.maps.add "SinglePlayerPlants0" "Levels/Level_Herb_Zomburbia/Level_Herb_Zomburbia" "Tutorial (Plants)" "Zomburbia" 0

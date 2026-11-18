@@ -149,6 +149,11 @@ namespace PRoCon.UI.Views
                 string duration = FormatBanDuration(ban.BanLength);
                 items.Add($"[{idType}] {identity}  |  {duration}  |  Reason: {reason}");
             }
+            // Avalonia throws when ItemsSource is replaced while the selection
+            // model still holds indices into the old collection.
+            BanListBox.SelectedItem = null;
+            if (BanListBox.SelectedItems.Count > 0)
+                BanListBox.SelectedItems.Clear();
             BanListBox.ItemsSource = null;
             BanListBox.ItemsSource = items;
         }
@@ -324,6 +329,7 @@ namespace PRoCon.UI.Views
 
             _client.SendRequest(words);
             _client.Game.SendBanListSavePacket();
+            _client.Game.SendBanListListPacket(0);
 
             if (BanIdInput != null) BanIdInput.Text = "";
             if (BanReasonInput != null) BanReasonInput.Text = "";
@@ -343,6 +349,7 @@ namespace PRoCon.UI.Views
 
             _client.SendRequest(new List<string> { "banList.remove", idType, id });
             _client.Game.SendBanListSavePacket();
+            _client.Game.SendBanListListPacket(0);
         }
 
         private void OnClearAllBans(object sender, RoutedEventArgs e)
@@ -351,6 +358,7 @@ namespace PRoCon.UI.Views
 
             _client.Game.SendBanListClearPacket();
             _client.Game.SendBanListSavePacket();
+            _client.Game.SendBanListListPacket(0);
         }
 
         private void OnRefresh(object sender, RoutedEventArgs e)

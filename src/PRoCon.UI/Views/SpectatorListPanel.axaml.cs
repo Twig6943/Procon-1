@@ -100,6 +100,10 @@ namespace PRoCon.UI.Views
 
         private void RefreshListDisplay()
         {
+            // Clear stale selection before replacing the source.
+            SpectatorSlotsList.SelectedItem = null;
+            if (SpectatorSlotsList.SelectedItems.Count > 0)
+                SpectatorSlotsList.SelectedItems.Clear();
             SpectatorSlotsList.ItemsSource = null;
             SpectatorSlotsList.ItemsSource = new List<string>(_spectatorPlayers);
         }

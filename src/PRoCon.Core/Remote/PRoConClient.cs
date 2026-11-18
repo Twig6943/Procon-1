@@ -843,6 +843,21 @@ namespace PRoCon.Core.Remote
                     Game = new MOHWClient(sender);
                     _connection = null;
                 }
+                else if (String.Compare(packetBeforeDispatch.Words[1], "GW1", StringComparison.OrdinalIgnoreCase) == 0 ||
+                         String.Compare(packetBeforeDispatch.Words[1], "GW2", StringComparison.OrdinalIgnoreCase) == 0 ||
+                         String.Compare(packetBeforeDispatch.Words[1], "BFN", StringComparison.OrdinalIgnoreCase) == 0 ||
+                         String.Compare(packetBeforeDispatch.Words[1], "GardenGate", StringComparison.OrdinalIgnoreCase) == 0 ||
+                         String.Compare(packetBeforeDispatch.Words[1], "GW", StringComparison.OrdinalIgnoreCase) == 0)
+                {
+                    // Old GardenGate builds report "GW" for the first game. Treat it
+                    // as GW1 everywhere instead of carrying a separate game type.
+                    var reportedGameType = packetBeforeDispatch.Words[1];
+                    if (String.Compare(reportedGameType, "GW", StringComparison.OrdinalIgnoreCase) == 0)
+                        reportedGameType = "GW1";
+
+                    Game = new GardenGateClient(sender, reportedGameType);
+                    _connection = null;
+                }
 
                 if (Game != null)
                 {

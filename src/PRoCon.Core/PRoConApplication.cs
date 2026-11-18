@@ -491,6 +491,31 @@ namespace PRoCon.Core
             ProConPaths.EnsureDirectories();
             _log.LogDebug("Directories ensured at {DataDir}", ProConPaths.DataDirectory);
 
+            // Extract embedded game definition files (.def) so map/mode data is
+            // available to both the connection layer and UI map panels.
+            try
+            {
+                var defAssembly = typeof(PRoConApplication).Assembly;
+                const string defPrefix = "PRoCon.Core.Resources.Configs.";
+                foreach (string resourceName in defAssembly.GetManifestResourceNames())
+                {
+                    if (!resourceName.StartsWith(defPrefix, StringComparison.Ordinal) ||
+                        !resourceName.EndsWith(".def", StringComparison.OrdinalIgnoreCase))
+                        continue;
+
+                    string fileName = resourceName.Substring(defPrefix.Length);
+                    string destPath = Path.Combine(ProConPaths.ConfigsDirectory, fileName);
+                    if (File.Exists(destPath)) continue;
+                    using var stream = defAssembly.GetManifestResourceStream(resourceName);
+                    using var fs = File.Create(destPath);
+                    stream?.CopyTo(fs);
+                }
+            }
+            catch (Exception ex)
+            {
+                _log.LogWarning(ex, "Failed to extract embedded game definitions");
+            }
+
             this.m_clIpToCountry = new CountryLookup(Path.Combine(ProConPaths.DataDirectory, "GeoIP.dat"));
 
             string ipCacheDir = Path.Combine(ProConPaths.CacheDirectory, "IPCheck");

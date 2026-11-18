@@ -128,6 +128,41 @@ namespace PRoCon.UI.Views
                         ("levels/mp_", "Base Maps"),
                     }
                 },
+                {
+                    "BFN", new List<(string, string)>
+                    {
+                        ("levels/dsub_region_", "Region Maps"),
+                        ("levels/dsub_tvm_", "Team Vanquish Maps"),
+                        ("levels/dsub_rush_", "Turf Takeover Maps"),
+                        ("levels/dsub_4v4_", "Arena Maps"),
+                        ("levels/dsub_socialspace", "Social Space"),
+                    }
+                },
+                {
+                    "GW1", new List<(string, string)>
+                    {
+                        ("_pvz/levels/coastal/rush_", "Gardens & Graveyards"),
+                        ("_pvz/levels/desert/rush_", "Gardens & Graveyards"),
+                        ("_pvz/levels/coastal/", "Coastal"),
+                        ("_pvz/levels/mainstreet/", "Mainstreet"),
+                        ("_pvz/levels/coop_suburbia/", "Suburbia"),
+                        ("_pvz/levels/desert/", "Desert"),
+                        ("_pvz/levels/sandbox/", "Sandbox"),
+                    }
+                },
+                {
+                    "GW2", new List<(string, string)>
+                    {
+                        ("levels/level_coop_infinityplane", "Infinity Time"),
+                        ("levels/level_endless_", "Infinity Time"),
+                        ("levels/level_hub_gnome", "Gnomiverse"),
+                        ("levels/level_hub_", "Backyard Battleground"),
+                        ("levels/level_fe_", "Front End"),
+                        ("levels/level_coop_", "Co-op Maps"),
+                        ("levels/level_rush_", "Gardens & Graveyards"),
+                        ("levels/level_herb_", "Herbal Assault"),
+                    }
+                },
             };
 
         public MapListPanel()
@@ -459,6 +494,9 @@ namespace PRoCon.UI.Views
                     })
                     .ToList();
 
+                // Clear selection before replacing ItemsSource to avoid the
+                // Avalonia stale-index crash, then pick the first mode.
+                ModeCombo.SelectedItem = null;
                 ModeCombo.ItemsSource = modeItems;
                 if (modeItems.Count > 0)
                     ModeCombo.SelectedIndex = 0;
@@ -467,6 +505,7 @@ namespace PRoCon.UI.Views
             {
                 _selectedMapFileName = null;
                 _selectedMapModes = null;
+                ModeCombo.SelectedItem = null;
                 ModeCombo.ItemsSource = null;
             }
         }

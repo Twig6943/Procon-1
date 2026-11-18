@@ -174,3 +174,24 @@ PRoCon-v2-Alpha-Setup.exe
 PRoCon-v2-Alpha-Setup-WithMusic.exe
 *.mp3
 .env*
+*.so
+*.dll
+
+wget-log*
+dotnet-install.sh
+
+# Kate
+*.kate-swp
+
+# AppImage
+src/PRoCon.UI/packaging/AppImage/PRoCon.UI
+AppDir/
+dist/
+appinfo
+quick-sharun
+*.AppImage
+*.zsync
+
+# flatpak
+repo/
+*.flatpak

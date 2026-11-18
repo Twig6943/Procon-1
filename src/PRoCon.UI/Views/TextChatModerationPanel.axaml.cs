@@ -164,6 +164,10 @@ namespace PRoCon.UI.Views
         private void RefreshListDisplay()
         {
             if (_moderationList == null) return;
+            // Clear stale selection before replacing the source.
+            _moderationList.SelectedItem = null;
+            if (_moderationList.SelectedItems.Count > 0)
+                _moderationList.SelectedItems.Clear();
             _moderationList.ItemsSource = null;
             _moderationList.ItemsSource = new List<ModerationDisplayEntry>(_entries);
         }

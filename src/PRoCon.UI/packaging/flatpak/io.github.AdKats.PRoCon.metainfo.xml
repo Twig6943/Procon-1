@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.AdKats.PRoCon</id>
+
+  <name>PRoCon Frostbite</name>
+  <summary>Remote administration tool for Frostbite game servers</summary>
+
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+
+  <developer id="io.github.AdKats">
+    <name>AdKats</name>
+  </developer>
+
+  <description>
+    <p>
+      PRoCon Frostbite is a remote administration tool for managing Battlefield
+      Frostbite game servers. It provides server administration, player
+      management, map rotation configuration, moderation and RCON functionality.
+    </p>
+  </description>
+
+  <launchable type="desktop-id">io.github.AdKats.PRoCon.desktop</launchable>
+
+  <url type="homepage">https://github.com/AdKats/PRoCon</url>
+  <url type="bugtracker">https://github.com/AdKats/PRoCon/issues</url>
+
+  <categories>
+    <category>Game</category>
+    <category>Utility</category>
+  </categories>
+
+</component>

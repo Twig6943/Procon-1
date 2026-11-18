@@ -11,6 +11,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Avalonia.Controls;
 using Avalonia.Controls.Presenters;
+using Avalonia.Input.Platform;
 using Avalonia.Interactivity;
 using Avalonia.Media;
 using Avalonia.Threading;
@@ -2071,22 +2072,27 @@ namespace PRoCon.UI.Views
 
             if (_chatLog != null) _chatLog.Text = "";
 
-            if (_consoleLogList != null) _consoleLogList.ItemsSource = null;
+            if (_consoleLogList != null)
+                _consoleLogList.ItemsSource = new List<string>();
 
-            if (_killFeedList != null) _killFeedList.ItemsSource = null;
+            if (_killFeedList != null)
+                _killFeedList.ItemsSource = new List<string>();
 
             // Clear team panels
             for (int t = 0; t < 4; t++)
             {
-                if (_teamLists[t] != null) _teamLists[t].ItemsSource = null;
+                if (_teamLists[t] != null)
+                    _teamLists[t].ItemsSource = new List<object>();
                 if (_teamHeaders[t] != null) _teamHeaders[t].Text = $"Team {t + 1} (0)";
             }
 
             // Clear spectator/commander panels
-            if (_spectatorList != null) _spectatorList.ItemsSource = null;
+            if (_spectatorList != null)
+                _spectatorList.ItemsSource = new List<PlayerDisplayInfo>();
             if (_spectatorHeader != null) _spectatorHeader.Text = "Spectators (0)";
             if (_spectatorPanel != null) _spectatorPanel.IsVisible = false;
-            if (_commanderList != null) _commanderList.ItemsSource = null;
+            if (_commanderList != null)
+                _commanderList.ItemsSource = new List<PlayerDisplayInfo>();
             if (_commanderHeader != null) _commanderHeader.Text = "Commanders (0)";
             if (_commanderPanel != null) _commanderPanel.IsVisible = false;
 
@@ -3178,8 +3184,9 @@ namespace PRoCon.UI.Views
 
                 if (_teamLists[t] != null)
                 {
-                    _teamLists[t].ItemsSource = null;
-
+                    // Never bind to the mutable TeamPlayers list directly: it is
+                    // cleared and repopulated before this method runs, which leaves
+                    // Avalonia's selection indices pointing past the end of the view.
                     if (entry.GroupBySquad)
                     {
                         // Build mixed list with squad headers interleaved
@@ -3205,7 +3212,7 @@ namespace PRoCon.UI.Views
                         // Restore fixed template for flat view
                         if (_teamLists[t].ItemTemplate == null)
                             _teamLists[t].ItemTemplate = (Avalonia.Controls.Templates.IDataTemplate)this.FindResource("PlayerItemTemplate");
-                        _teamLists[t].ItemsSource = players;
+                        _teamLists[t].ItemsSource = players.ToList();
                     }
 
                     // Restore selections by name
@@ -3243,8 +3250,7 @@ namespace PRoCon.UI.Views
             // Spectators
             if (_spectatorList != null)
             {
-                _spectatorList.ItemsSource = null;
-                _spectatorList.ItemsSource = entry.Spectators;
+                _spectatorList.ItemsSource = entry.Spectators.ToList();
                 if (selectedNames.Count > 0)
                     foreach (var p in entry.Spectators)
                         if (selectedNames.Contains(p.Name))
@@ -3258,8 +3264,7 @@ namespace PRoCon.UI.Views
             // Commanders
             if (_commanderList != null)
             {
-                _commanderList.ItemsSource = null;
-                _commanderList.ItemsSource = entry.Commanders;
+                _commanderList.ItemsSource = entry.Commanders.ToList();
                 if (selectedNames.Count > 0)
                     foreach (var p in entry.Commanders)
                         if (selectedNames.Contains(p.Name))
