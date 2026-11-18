@@ -25,6 +25,7 @@ jobs:
         run: |
           flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
           flatpak install --user --noninteractive --assumeyes flathub \
+          org.freedesktop.Sdk//26.08 \
           org.freedesktop.Platform//26.08 \
           org.freedesktop.Sdk.Extension.dotnet10//26.08
 
